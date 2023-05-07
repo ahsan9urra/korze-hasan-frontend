@@ -13,7 +13,7 @@ const Transactions = () => {
     const GetTransactions = async (user_name) => {
         setLoading(true);
         try {
-            const response = await axios.get(`https://different-fawn-underwear.cyclic.app/api/transactions/${user_name}`);
+            const response = await axios.get(`http://localhost:4000/api/transactions/${user_name}`);
             console.log(response);
             if (response.status === 200) {
                 setMessage({
