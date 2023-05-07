@@ -63,7 +63,7 @@ const SignUp = () => {
     const SignAPI = async () => {
         setLoading(true);
         try {
-            const API = "http://localhost:4000/api/signup"
+            const API = "https://different-fawn-underwear.cyclic.app/api/signup"
             
             const response = await axios.post(API, formData);
             console.log(response)
